@@ -1,55 +1,6 @@
-{
-  "version": "1.0",
-  "date": "2026-01-16",
-  "generated_at": "2026-01-16T07:00:00Z",
-  "timezone": "Europe/London",
-  "location": { "label": "Belfast, UK", "lat": 54.597, "lon": -5.93 },
-  "read_time_estimate_min": 6,
-  "snapshot": {
-    "weather_line": "6–9°C, rain likely, gusty.",
-    "top_global_headline": { "title": "Example headline (replace daily)", "url": "https://www.bbc.co.uk/news" },
-    "top_ai_item": { "title": "Example AI update (replace daily)", "url": "https://openai.com" },
-    "alerts": []
-  },
-  "weather": {
-    "provider": "Example",
-    "today": { "high_c": 9, "low_c": 6, "rain_prob_pct": 70, "wind_note": "Gusty", "notable": "Rain" },
-    "links": { "hourly": "https://www.metoffice.gov.uk", "daily7": "https://www.metoffice.gov.uk" }
-  },
-  "sections": {
-    "global_news": [
-      {
-        "id": "g1",
-        "cluster_id": "c_20260116_01",
-        "title": "Example global story 1",
-        "summary": "A short neutral summary goes here.",
-        "why_it_matters": "One line explaining why you care.",
-        "primary_source": { "name": "BBC", "url": "https://www.bbc.co.uk/news" },
-        "published_at": "2026-01-16T06:00:00Z",
-        "tags": ["example"],
-        "actions": {
-          "open_original": "https://www.bbc.co.uk/news",
-          "deep_dive_path": "/deep/2026-01-16/story/c_20260116_01.json"
-        }
-      }
-    ],
-    "local_news": [],
-    "ai_tech": [],
-    "tool_pick": null
-  },
-  "deep_dive_index": [
-    {
-      "cluster_id": "c_20260116_01",
-      "type": "news",
-      "path": "/deep/2026-01-16/story/c_20260116_01.json",
-      "status": "stub"
-    }
-  ],
-  "limits": {
-    "global_news_max": 3,
-    "local_news_max": 2,
-    "ai_tech_max": 2,
-    "tool_pick_max": 1,
-    "word_budget_max": 550
-  }
-}
+{"version":"1.0","date":"2026-01-16","generated_at":"2026-01-16T08:00:00Z","timezone":"Europe/London","location":{"label":"Belfast, UK","lat":54.597,"lon":-5.93},"read_time_estimate_min":6,"snapshot":{"weather_line":"Cloudy with occasional showers and highs around 7–8 °C.","top_global_headline":{"title":"IMF chief backs Fed independence amid Trump pressure","url":"https://globalnews.ca/news/11615263/us-fed-jerome-powell-imf-georgieva-imf-trump/"},"top_ai_item":{"title":"US
+, European regulators set principles for 'good AI practice' in drug development","url":"https://www.reuters.com/business/healthcare-pharmaceuticals/us-european-regulators-set-principles-good-ai-practice-drug-development-2026-01-14/"},"alerts":[]},"weather":{"provider":"Met
+ Office / AccuWeather","today":{"high_c":8,"low_c":5,"rain_prob_pct":40,"wind_note":"light winds from SE","notable":"showers at times"},"links":{"hourly":"https://weather.metoffice.gov.uk/forecast/gcey94cuf","daily7":"https://weather.metoffice.gov.uk/forecast/gcey94cuf"}},"sections":{"global_news":[{"id":"g1","cluster_id":"c_20260116_01","title":"IMF
+ chief backs Fed independence amid Trump pressure","summary":"International Monetary Fund chief Kristalina Georgieva reiterated support for Federal Reserve Chair Jerome Powell and central bank independence amid political scrutiny.","why_it_matters":"Signals continued emphasis on data-driven policy in uncertain political environments.","primary_source":{"name":"Global News","url":"https://globalnews.ca/news/11615263/us-fed-jerome-powell-imf-georgieva-imf-trump/"},"published_at":"2026-01-16T00:00:00Z","tags":["economy","policy"],"actions":{"open_original":"https://globalnews.ca/news/11615263/us-fed-jerome-powell-imf-georgieva-imf-trump/","deep_dive_path":"/deep/2026-01-16/story/c_20260116_01.json"}}],"local_news":[],"ai_tech":[{"id":"a1","cluster_id":"c_20260116_ai01","title":"US
+, European regulators set principles for 'good AI practice' in drug development","summary":"The FDA and EMA issued joint guidance outlining principles for safe and responsible AI use across the drug lifecycle, aiming to balance innovation with patient safety.","why_it_matters":"Regulatory alignment on AI in pharma could streamline development and compliance.","primary_source":{"name":"Reuters","url":"https://www.reuters.com/business/healthcare-pharmaceuticals/us-european-regulators-set-principles-good-ai-practice-drug-development-2026-01-14/"},"published_at":"2026-01-14T00:00:00Z","tags":["AI","pharma
+ regulation"],"actions":{"open_original":"https://www.reuters.com/business/healthcare-pharmaceuticals/us-european-regulators-set-principles-good-ai-practice-drug-development-2026-01-14/","deep_dive_path":"/deep/2026-01-16/story/c_20260116_ai01.json"}}],"tool_pick":null},"deep_dive_index":[]}
