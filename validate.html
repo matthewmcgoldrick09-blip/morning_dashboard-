@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Validate brief.json</title>
+  <style>
+    body{font-family:system-ui;margin:20px}
+    .ok{color:green} .bad{color:#b00020}
+    pre{background:#f4f4f4;padding:12px;border-radius:8px;overflow:auto}
+  </style>
+</head>
+<body>
+  <h1>brief.json validator</h1>
+  <div id="status">Loading…</div>
+  <pre id="details"></pre>
+
+  <script>
+    function fail(msg, err) {
+      document.getElementById("status").innerHTML = `<span class="bad">✖ ${msg}</span>`;
+      document.getElementById("details").textContent = err ? String(err) : "";
+    }
+
+    fetch("data/brief.json", { cache: "no-store" })
+      .then(r => {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then(d => {
+        const problems = [];
+        if (!d.version) problems.push("Missing version");
+        if (!d.date) problems.push("Missing date");
+        if (!d.snapshot) problems.push("Missing snapshot");
+        if (!d.weather?.today) problems.push("Missing weather.today");
+        if (!d.sections?.global_news) problems.push("Missing sections.global_news");
+        if ((d.sections?.global_news || []).length > 3) problems.push("global_news has > 3 items");
+        if ((d.sections?.ai_tech || []).length > 2) problems.push("ai_tech has > 2 items");
+        if ((d.sections?.local_news || []).length > 2) problems.push("local_news has > 2 items");
+
+        if (problems.length) {
+          document.getElementById("status").innerHTML =
+            `<span class="bad">✖ JSON loaded but has issues:</span> ${problems.join(", ")}`;
+        } else {
+          document.getElementById("status").innerHTML = `<span class="ok">✔ JSON looks good</span>`;
+        }
+
+        document.getElementById("details").textContent = JSON.stringify({
+          date: d.date,
+          location: d.location?.label,
+          read_time_estimate_min: d.read_time_estimate_min,
+          global_news_count: d.sections?.global_news?.length || 0,
+          local_news_count: d.sections?.local_news?.length || 0,
+          ai_tech_count: d.sections?.ai_tech?.length || 0
+        }, null, 2);
+      })
+      .catch(err => fail("Could not load/parse data/brief.json", err));
+  </script>
+</body>
+</html>
