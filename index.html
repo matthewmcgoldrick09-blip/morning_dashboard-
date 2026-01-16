@@ -163,6 +163,12 @@
       el("meta").textContent = "Failed to load today.json";
       console.error(err);
     });
-  </script>
+     
+ <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/morning_dashboard-/sw.js");
+  }
+</script>
+
 </body>
 </html>
