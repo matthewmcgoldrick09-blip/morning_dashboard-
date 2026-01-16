@@ -67,7 +67,7 @@
     function link(title, url) { return `<a href="${url}" target="_blank" rel="noopener">${title}</a>`; }
 
     async function load() {
-      const res = await fetch("./data/today.json", { cache: "no-store" });
+      const res = await fetch("./data/brief.json", { cache: "no-store" });
       const d = await res.json();
 
       el("meta").innerHTML = `${d.date} · ${d.location?.label || ""} · Read ~${d.read_time_estimate_min || "?"} min`;
