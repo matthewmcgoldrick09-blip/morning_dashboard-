@@ -13,13 +13,11 @@
 "weather_line": "Cool and mostly cloudy in Belfast with intermittent showers and light winds.",
 "top_global_headline": {
 "title": "IMF reiterates support for central bank independence amid global political pressure",
-"url": "https://www.imf.org/en/News/Articles/2026/01/15/imf-central-bank-independence-statement
-"
+"url": "https://www.imf.org/en/News/Articles/2026/01/15/imf-central-bank-independence-statement"
 },
 "top_ai_item": {
 "title": "FDA and EMA outline shared principles for AI use in drug development",
-"url": "https://www.ema.europa.eu/en/news/fda-ema-joint-principles-artificial-intelligence-drug-development
-"
+"url": "https://www.ema.europa.eu/en/news/fda-ema-joint-principles-artificial-intelligence-drug-development"
 },
 "alerts": []
 },
@@ -33,10 +31,8 @@
 "notable": "Occasional showers through the afternoon"
 },
 "links": {
-"hourly": "https://www.metoffice.gov.uk/weather/forecast/gcey94cuf
-",
-"daily7": "https://www.metoffice.gov.uk/weather/forecast/gcey94cuf
-"
+"hourly": "https://www.metoffice.gov.uk/weather/forecast/gcey94cuf",
+"daily7": "https://www.metoffice.gov.uk/weather/forecast/gcey94cuf"
 }
 },
 "sections": {
@@ -49,14 +45,12 @@
 "why_it_matters": "Reinforces expectations of policy continuity in global markets despite political volatility.",
 "primary_source": {
 "name": "International Monetary Fund",
-"url": "https://www.imf.org/en/News/Articles/2026/01/15/imf-central-bank-independence-statement
-"
+"url": "https://www.imf.org/en/News/Articles/2026/01/15/imf-central-bank-independence-statement"
 },
 "published_at": "2026-01-15T18:00:00Z",
 "tags": ["economy", "monetary-policy"],
 "actions": {
-"open_original": "https://www.imf.org/en/News/Articles/2026/01/15/imf-central-bank-independence-statement
-",
+"open_original": "https://www.imf.org/en/News/Articles/2026/01/15/imf-central-bank-independence-statement",
 "deep_dive_path": "/deep/2026-01-16/story/c_20260116_01.json"
 }
 }
@@ -71,14 +65,12 @@
 "why_it_matters": "Provides clearer regulatory expectations for AI-enabled analytics in regulated manufacturing and R&D.",
 "primary_source": {
 "name": "European Medicines Agency",
-"url": "https://www.ema.europa.eu/en/news/fda-ema-joint-principles-artificial-intelligence-drug-development
-"
+"url": "https://www.ema.europa.eu/en/news/fda-ema-joint-principles-artificial-intelligence-drug-development"
 },
 "published_at": "2026-01-14T09:00:00Z",
 "tags": ["AI", "regulation", "pharma"],
 "actions": {
-"open_original": "https://www.ema.europa.eu/en/news/fda-ema-joint-principles-artificial-intelligence-drug-development
-",
+"open_original": "https://www.ema.europa.eu/en/news/da-ema-joint-principles-artificial-intelligence-drug-development",
 "deep_dive_path": "/deep/2026-01-16/story/c_20260116_ai01.json"
 }
 }
